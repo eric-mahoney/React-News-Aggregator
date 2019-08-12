@@ -11,7 +11,7 @@ function App() {
         <h1>React News App</h1>
         <h2>
           <i>
-            News article via{" "}
+            News articles via{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
