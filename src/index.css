@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f7f9;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.article-container {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+h1 {
+  padding-top: 20px;
+  margin: 0;
+}
+.header {
+  z-index: 0;
+  position: relative;
+  background-color: #a1c4fd;
+  box-shadow: 0px 0px 10px rgb(179, 179, 179);
+  color: rgb(66, 70, 87);
+  font-weight: 400;
+  height: 30%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.stripe {
+  z-index: -1;
+  position: absolute;
+  transform: skewY(5deg);
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: rgb(66, 70, 87);
+}
+.article {
+  box-shadow: 0 1px 3px #acbcda, 0 1px 2px #a7b7d4;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin: 20px 0px;
+  cursor: pointer;
+  color: rgb(66, 70, 87);
+  background-color: #e7f0fb;
+}
+
+.article:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.article-title {
+  color: rgb(66, 70, 87);
+  font-weight: 600;
+  font-family: "Crimson Text", serif;
+}
+
+.article-title,
+.article-description {
+  padding: 10px;
+}
+
+.article-description {
+  line-height: 25px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.article img {
+  width: 100%;
+}
+
+.footer {
+  box-shadow: 0 1px 3px #acbcda, 0 1px 2px #a7b7d4;
+  background-color: #e7f0fb;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 20%;
+}
+
+.footer img {
+  height: 50px;
+}
+
+@media only screen and (min-width: 1224px) {
+  .article-container {
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .article {
+    width: 20%;
+    margin: 20px;
+  }
+  .article-title {
+    font-size: 25px;
+  }
+  .article-description {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
