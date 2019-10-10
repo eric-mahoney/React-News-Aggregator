@@ -23,7 +23,7 @@ To Start Server, navigation to React app folder and run:
 
 ## Reflection
 
-This is a personal project I built to start learning React. During the course of this project, I gained knowledge of created React components and rendering them to the DOM. I also gained familiarity with JavaScript's fetch api and processing the json data returned in the promise. 
+This is a personal project I built to start learning React. During the course of this project, I gained knowledge of creating React components, passing props between the components, and rendering them to the DOM. I also gained familiarity with JavaScript's fetch api and processing the json data returned in the promise. 
 
 Currently, the application uses the following technologies: React, HTML, CSS. 
 
